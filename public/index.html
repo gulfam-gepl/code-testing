@@ -17,13 +17,35 @@
         <span class="brand__logo" aria-hidden="true">SP</span>
         StudyPortal
       </a>
-      <nav class="nav">
+      
+      <!-- Hamburger menu button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+      
+      <!-- Desktop navigation -->
+      <nav class="nav nav--desktop">
         <a href="/index.html" aria-current="page">Home</a>
         <a href="/about.html">About Us</a>
         <a href="/courses.html">Courses</a>
         <a href="/entrance-exams.html">Entrance Exams</a>
         <a href="/government-jobs.html">Govt Jobs</a>
         <a class="btn btn--primary" href="#latest-courses">Get Started</a>
+      </nav>
+      
+      <!-- Mobile navigation overlay -->
+      <nav class="nav nav--mobile" id="mobile-nav" aria-hidden="true">
+        <div class="nav__overlay"></div>
+        <div class="nav__menu">
+          <a href="/index.html" aria-current="page">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/courses.html">Courses</a>
+          <a href="/entrance-exams.html">Entrance Exams</a>
+          <a href="/government-jobs.html">Govt Jobs</a>
+          <a class="btn btn--primary" href="#latest-courses">Get Started</a>
+        </div>
       </nav>
     </div>
   </header>
